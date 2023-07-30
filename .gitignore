@@ -50,7 +50,10 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
-
+.idea/
+.idea
+.vscode/
+.vscode
 # Translations
 *.mo
 *.pot

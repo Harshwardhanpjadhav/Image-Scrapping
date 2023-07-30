@@ -15,8 +15,15 @@ app = application
 
 @app.route('/')
 def index():
-    
-    return render_template('index.html')
+    try:
+        
+        return render_template('index.html')
+    except Exception as e:
+        logging.error(e)
+        return "Something went wrong"
+
+
+
 
 
 if __name__ == '__main__':
