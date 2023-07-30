@@ -7,10 +7,11 @@ from urllib.request import urlopen   # Requesting server
 
 application = Flask('__main__')
 app = application
+
+
 @app.route('/')
 def index():
     return 'Hello World!'
-
 
 
 if '__main__' == '__name__':
