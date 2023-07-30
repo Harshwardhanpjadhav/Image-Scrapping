@@ -85,28 +85,14 @@ def search():
 
             # Delete the ZIP file after download
             os.remove(f"{query}.zip")
+            logging.info("Deleted the ZIP file after download")
 
             # Delete the original folder after download
             shutil.rmtree('images')
+            logging.info("Deleted the original folder after download")
+
 
             return zipfile
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
